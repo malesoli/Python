@@ -1,0 +1,43 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0.8rem;
+}
+
+.texto-menu{
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+}
+
+.contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    align-items: center;
+}
+
+.logo-menu {
+
+    margin: 0;
+    width: 10rem;
+}
+
+.nav-menu{
+    margin-right: 5rem;
+}
+
+footer{
+    background-color: blanchedalmond;
+}
+
+li,a{
+    text-decoration: none;
+}
