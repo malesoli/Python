@@ -1,43 +1,250 @@
+@font-face{
+    font-family: SecularOne-Regular;
+    src: url('SecularOne-Regular.ttf') format('truetype');
+}
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
-.nav-menu ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0.8rem;
+*, *::before, *::after{
+    box-sizing: inherit;
 }
 
-.texto-menu{
-    font-size: 2rem;
-    color: black;
-    font-weight: bold;
-}
-
-.contenedor-header {
-    display: flex;
-    justify-content: space-between;
-    background-color: gray;
-    align-items: center;
+body{
+    font-family: SecularOne-Regular;
 }
 
 .logo-menu {
 
+    height: 13rem;
     margin: 0;
-    width: 10rem;
+    padding: 0;
 }
 
 .nav-menu{
-    margin-right: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-footer{
-    background-color: blanchedalmond;
+
+.enlaces-menu{
+    display: flex;
+    padding: 0;
 }
 
-li,a{
+.enlaces-menu li{
+   padding: 0 2rem;
+   list-style-type: none; 
+   transition: 0.3s;
+}
+
+.enlaces-menu li a{
     text-decoration: none;
+    font-size: 2.5rem;
+    color: #8D1B3D;
+    font-weight: 600;
+ }
+
+ .enlaces-menu li a:hover{
+    color: black;
+ }
+
+ .linea{
+    background-color: #8D1B3D;
+    height: 1px;
+    border: none;
+ }
+
+.barras-menu{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    display: none;
+}
+
+.contenedor-header{
+    padding-right: 4rem;
+    background: rgb(214,214,204);
+    background: linear-gradient(180deg, rgba(214,214,204,1) 0%, rgba(238,238,228,1) 100%);
+}
+
+.barras-menu span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: black;
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+}
+
+.active-linea1-barras-menu{
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.active-linea2-barras-menu{
+    opacity: 0;
+    margin-left: -30px;
+}
+
+.active-linea3-barras-menu{
+    transform: rotate(-45deg) translate(-4px, 2px);
+}
+
+.contenedor-footer{
+    background: #eeeee4;
+}
+
+.iconos-footer{
+    height:3rem;
+    border:none;
+
+}
+
+.textos-footer{
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    align-items: center;
+}
+
+.textos-footer a{
+    margin: 0 2rem;
+    color: #8D1B3D;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.textos-footer p{
+    margin: 0 2rem;
+    color: #8D1B3D;
+    font-size: 1.5rem;
+}
+
+.textos-footer a:hover{
+    color: black;
+ }
+
+.iconos-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconos-footer i{
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
+.contenedor-principal{
+    background-color:#8D1B3D;
+}
+
+.contenedor{
+    width:90%;
+    margin: auto;
+}
+
+
+@media (max-width: 1080px){
+.enlaces-menu li a{
+ 
+    font-size: 2.0rem;
+ }
+
+ .contenedor-header{
+    display: flex;
+    justify-content: center;
+ }
+
+}
+
+@media (max-width: 356px){
+    .logo-menu{
+        height: 8rem;
+    }
+
+    .contenedor-header{
+        min-height: 8rem;
+    }
+
+    .textos-footer{
+        flex-direction: column;
+        justify-content: center;
+        min-height: 6rem;
+        align-items: center;
+    }
+}
+
+@media (max-width: 190px){
+    .logo-menu{
+        display: none;
+    }
+
+    .enlaces-menu li a{
+ 
+        font-size: 1.2rem;
+     }
+
+     .iconos-footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 14rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .barras-menu {
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 25px;
+
+    }
+
+    .nav-menu{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2.5rem 0;
+    }
+
+    .enlaces-menu{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 82vh;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: none;
+    }
+
+    .enlaces-menu li{ 
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .textos-footer a{
+        font-size: 1.0rem;
+    }
+    
+    .textos-footer p{
+        font-size: 1.0rem;
+    }
+
+}
+
+
+.enlaces-menu.active{
+    display: flex;
 }
