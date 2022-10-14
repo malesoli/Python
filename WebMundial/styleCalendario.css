@@ -1,0 +1,16 @@
+.contenedor-imagen{
+    background-color:#8D1B3D;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.imagen{
+    width:90%;
+    margin: auto;
+}
+
+
+.img-calendario{
+    width: 100%;
+    height: 100%;
+}
