@@ -1,0 +1,64 @@
+.tabla{
+    background-color: #eeeee4;
+    margin: auto;
+    width: 30%;
+    margin-bottom: 3rem;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.contenedor{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+th, td{
+    border: solid 1px black;
+    padding: 0.5rem;
+    font-size: 1rem;
+    
+}
+
+.titulo-tabla{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+tr:hover td{
+    color: #8D1B3D;
+    background-color: #FBEEE6;
+}
+
+
+
+@media (min-width: 768px){
+    .contenedor{
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+    
+    }
+
+    th, td{
+      
+        font-size: 1.5rem;
+        height: 4rem
+
+        
+    }
+
+    .titulo-tabla{
+
+        font-size: 2rem;
+
+    }
+}
+
+@media (min-width: 1080px){
+    th, td{
+
+        font-size: 1.8rem;
+      
+    }
+
+}
