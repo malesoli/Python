@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/logoIco.ico">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleContactos.css">
+    <link rel="stylesheet" href="styleContacto.css">
     <script src="https://kit.fontawesome.com/d63a1f0149.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/formulario.js"></script>
     <title>Qatar 2022</title>
 </head>
 
@@ -36,15 +37,17 @@
     </header>
 
     <hr class="linea">
-
     <main class="contenedor-principal">
-
         <section class="contenedor">
-
-
-
+            <nav class="formulario">
+                <form class="contacto" onsubmit="return validar();">
+                    <div><label>Nombre:</label><input id="nombre" type='text' value=''></div>
+                    <div><label>Email:</label><input id="mail" type='text' value=''></div>
+                    <div><label>Mensaje:</label><textarea id="mensaje" rows='6'></textarea></div>
+                    <div><input type='submit' value='Enviar'></div>
+                </form>
+            </nav>
         </section>
-
     </main>
 
     <footer class="contenedor-footer">
