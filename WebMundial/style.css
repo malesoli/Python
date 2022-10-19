@@ -3,6 +3,9 @@
     src: url('SecularOne-Regular.ttf') format('truetype');
 }
 
+body {
+    background-color: #8D1B3D;
+}
 
 *{
     margin: 0;
@@ -10,7 +13,6 @@
     box-sizing: border-box;
     font-size: 62.5%;
     font-family: SecularOne-Regular, serif;
-
 }
 
 *, *::before, *::after{
@@ -99,6 +101,10 @@
 
 .contenedor-footer{
     background: #eeeee4;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .iconos-footer{
@@ -242,64 +248,27 @@
 
 }
 
-
 .enlaces-menu.active{
     display: flex;
 }
 
-.lista ul{
-    list-style: square inside url(star.gif);
-    border-left: 5px solid blue;
-    background-color: #f1f1f1;
-    padding: 10px 20px;
+.cuenta-regresiva {
+    color: rgb(214,214,204);;
+    text-align: center;
 }
 
-#count-down {
-    display: flex;
-    list-style: none;
+.cuenta-regresiva > h1, .cuenta-regresiva > h2 {
+    font-size: 35em;
 }
 
-#count-down li {
-    font-size: 32px;
-    font-weight: bold;
-    height: 45px;
-    padding: 8px 12px;
-    position: relative;
+.cuenta-regresiva > ul > li {
+    display: inline-block;
+    font-size: 30em;
+    list-style-type: none;
+    padding: 2em;
 }
 
-#count-down li:before,
-#count-down li:after {
-    position: absolute;
+li span {
+    display: block;
+    font-size: 15rem;
 }
-
-#count-down li:not(:last-child):before {
-    font-size: 24px;
-    right: -15px;
-    top: 15px;
-}
-
-#count-down li:after {
-    bottom: -16px;
-    display: flex;
-    font-size: 10px;
-    font-weight: 100;
-    justify-content: center;
-    width: calc(100% - 22px);
-}
-
-#count-down li.dias:after {
-    content: "DÍAS";
-}
-
-#count-down li.horas:after {
-    content: "HORAS";
-}
-
-#count-down li.minutos:after {
-    content: "MINUTOS";
-}
-
-#count-down li.segundos:after {
-    content: "SEGUNDOS";
-}
-
