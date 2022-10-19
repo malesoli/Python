@@ -80,6 +80,7 @@ body{
 
 .btn-derecha{
     right: 0.2rem;
+    transform: rotate(180deg);
 }
 
 .btn-izquierda{

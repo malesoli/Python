@@ -32,3 +32,9 @@ font-size: 1.5rem;
     color: #8D1B3D;
     font-size: 1.5rem;
 }
+
+.noticia p,h2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+}
