@@ -51,6 +51,10 @@ body {
     font-weight: 600;
  }
 
+.active {
+    color: #000000 !important;
+}
+
  .enlaces-menu li a:hover{
     color: black;
  }
@@ -154,9 +158,8 @@ body {
 
 .contenedor{
     width:90%;
-    margin: auto;
+    margin: auto auto 5%;
 }
-
 
 @media (max-width: 1080px){
 .enlaces-menu li a{
@@ -259,16 +262,44 @@ body {
 
 .cuenta-regresiva > h1, .cuenta-regresiva > h2 {
     font-size: 35em;
+    letter-spacing: 0.5em;
+}
+
+.cuenta-regresiva > h2 {
+margin-bottom: 3%;
 }
 
 .cuenta-regresiva > ul > li {
     display: inline-block;
     font-size: 30em;
     list-style-type: none;
-    padding: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
 }
 
 li span {
     display: block;
     font-size: 15rem;
+}
+
+.ganadores {
+    border: 1px solid #CED5D7;
+    box-shadow:0 0 0 3px #EEF5F7;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px white;
+    background-color: #eeeee4;
+    font-size: 10em;
+    margin-top: 2em;
+    color: black;
+}
+
+.ganadores:hover{
+    background-color:#8D1B3D;
+    color: white;
+    cursor: pointer;
+    text-shadow: none;
+    font-size: 10em;
 }
