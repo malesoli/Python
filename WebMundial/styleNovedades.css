@@ -1,0 +1,40 @@
+body{
+    background: #8D1B3D;
+}
+.contenedor{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    row-gap: 4rem;
+    column-gap: 2rem;
+}
+.noticia{
+    background-color: white;
+    width: 30%;
+}
+.imagen{
+    width: 100%;
+}
+.fecha{color:#8D1B3D;
+font-weight: bold;
+font-size: 1.5rem;
+}
+
+.titulo{
+    color: #8D1B3D;
+    font-size: 2rem;
+}
+.texto{
+    color: #8D1B3D;
+    font-size: 1.5rem;
+}
+
+.noticia p,h2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+}

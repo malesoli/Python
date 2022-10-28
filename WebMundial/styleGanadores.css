@@ -1,0 +1,23 @@
+.tabla-ganadores{
+    background-color: #eeeee4;
+    margin: auto;
+    width: 50%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.contenedor{
+    padding-top: 3rem;
+}
+
+th, td{
+    border: solid 1px black;
+    padding: 0.5rem;
+    font-size: 2rem;
+
+}
+
+tr:hover td{
+    color: #8D1B3D;
+    background-color: #FBEEE6;
+}
